@@ -1,0 +1,196 @@
+.top-header{
+	background: @color-white;
+	height: 2.875em;
+	line-height: 2.875em;
+	div{
+		display: inline-block;
+	}
+	.top-header__promo{
+	    font-size: 0.875em;
+	    margin-left: 2.06625em;
+    }
+    .nav-header-top{
+	    font-size: 0.875em;
+	    text-transform: uppercase;
+	    float: right;
+	    margin-right: 2.06625em;
+	    .nav-header-top__item{
+	        list-style: none;
+	        display: inline-block;
+	        padding-left: 1.25em;
+	        a{
+	        	text-decoration: none;
+	            color: @color-grey;
+	        }
+        }
+        .nav-header-top__item_top_active a{
+	        color: @color-blue;
+        }
+    }
+}
+
+//---------------------------
+.middle-header{
+	height: 12.25em;
+	.middle-header__logo{
+		margin: 4.0625em 0 4.0625em 1.033125em;
+		.logo-img{
+	        max-width: 100%;
+	        height: auto;
+        }
+	}
+	.middle-header__social{
+		ul{
+			float: right;
+			margin: 4.5625em -0.9375em 4.5625em 0;
+			.social-item{
+				padding-left: 1em;
+	            list-style: none;
+	            display: inline-block;
+	            opacity: 0.3;
+			}
+		}
+	}
+}
+//---------------------------
+.header-bottom{
+	background: @color-white;
+	height: 2.875em;
+	line-height: 2.875em;
+	border-bottom: 5px solid @color-red;
+	.header-bottom__menu{
+		text-transform: uppercase;
+	    font-weight: bold;
+	    font-size: 1.125em;
+	    margin-left: -0.9375em;
+	    .header-bottom-menu-item{
+	    	display: inline-block;
+	    	list-style: none;
+	    	padding: 0 4.92537313%;
+	    	position: relative;
+	    	.select{
+	    		position: absolute;
+	    		bottom: -14px;
+	    		left: 40%;
+	    		display: none;
+	    	}
+	    	.select_visible{
+		        display: block;
+		    }
+	    	a{
+	    	    text-decoration: none;
+	    	    color: @color-black;
+	        }
+	        .header-bottom-menu-item_active{
+	    	    color: @color-red;
+	    	} 
+	    }
+	}
+	.header-bottom__shop-cart{
+		float: right;
+	    text-transform: uppercase;
+	    margin-right:  -0.9375em;
+	    font-size: 1.125em;
+		.shop-cart__items{
+            color: @color-blue;
+		    padding-left: 5px;
+		}
+		.shop-cart__price{
+            color: @color-green;
+		    padding-left: 5px;
+		}
+		.shop-cart__dropdown{
+	        display: inline-block;
+	        margin-right: 1.56625em;
+        }
+	}
+}
+//---------------------------
+.header-page-title{
+	text-transform: uppercase;
+    font-size: 1.125em;
+	.page-title{ 
+        display: inline-block;
+        width: 13%;
+        float: left;
+		div{
+		    margin: 10px 0px 15px 9.2%;
+		    padding-right: 0px;
+		    border-right: 3px solid @color-blue;
+		    font-weight: bold;
+		    color: @color-blue;
+	    }
+	}
+    .page-description{ 
+        display: inline-block;
+        width: 86%;
+        float: right;
+        margin-right: -0.9375em;
+	    div{
+		    margin: 10px 0px 15px;
+	    }
+	}
+}
+
+@media screen and (max-width: 991px){
+	.header-bottom{	
+    	height: 6.075em;
+    	border-bottom: none;
+    	.header-bottom__menu{
+			text-align: center;
+			border-bottom: 5px solid @color-red;
+			margin-right: -0.9375em;
+			margin-bottom: 0px;
+			.header-bottom-menu-item{
+		    	.select{
+		    		bottom: -17px;		    		
+		    	}
+		    }
+		}
+    }
+}
+@media screen and (max-width: 790px){
+    .top-header{
+	    .top-header__promo{
+	        display: none;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .middle-header{
+		height: 10em;
+		.middle-header__logo{
+			margin: 0.625em 0 0.625em 1.033125em;
+		}
+		.middle-header__social{
+			overflow: hidden;
+			ul{
+				margin: 0.665em 0;
+			}
+		}
+    }
+}
+@media screen and (max-width: 680px){
+	.header-bottom{	
+		.header-bottom__menu{
+		    .header-bottom-menu-item{
+		    	padding: 0 1.925373%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .middle-header{
+		.middle-header__logo{
+			text-align: center;
+			margin: 0.625em;
+		}
+		.middle-header__social{
+			ul{
+				float: none;
+				margin: 0.665em 0;
+				text-align: center;
+			}
+		}
+    }
+}
